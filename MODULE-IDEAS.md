@@ -1,0 +1,112 @@
+# Module Ideas
+Brainstorming modules.
+
+# Table Of Contents
+- [Modules](#modules)
+
+# Modules
+- Disk
+	- Partitions
+	- Encryption
+		- Secure Erase
+		- DM Crypt Luks Container
+	- FStab
+- Linux Install
+	- Live Environment Setup
+		- Network
+		- Mirrors
+		- Locale
+		- Time
+			- Timezone
+			- NTP
+	- Base OS
+	- [Chroot]
+	- Accounts
+		- Root password
+		- Personal account
+			- Create
+			- Password
+			- Sudoer
+	- Bootloader
+	- [Reboot]
+- System Setup
+	- Hostname
+	- Update firmware
+	- Connection manager
+- Shell
+	- Git
+	- Dotfiles
+	- Zsh
+	- TMux
+	- GPG
+	- NVim
+		- Deoplete
+	- [Mosh](https://mosh.org/)
+- X
+	- X (Perhaps Wayland?)
+	- Xrandr (For multiple screens)
+	- Alacrity
+	- Bspwm
+	- Sxhkd
+	- Compositor (Compton?)
+	- Fonts
+		- Hack
+		- Roboto
+		- Nerd fonts
+	- Adapta (GTK Theme)
+	- Dmenu
+	- Locker
+	- Polybar
+	- Some Dock
+- Drivers
+	- Yubikey
+	- Ltunify (Wireless mice)
+	- NTFS
+- Dev Env
+	- Languages
+		- Go
+		- Godebug
+		- Python
+			- 3.x.x
+			- Virtual env
+		- NodeJs
+		- Android
+			- Studio
+			- NDK
+			- SDK
+		- Flutter
+		- LaTeX
+	- Tools
+		- GPG
+		- Rkt
+		- GCloud CLI
+		- DNSUtils
+		- HTTPie
+		- Drone CLI
+	- Setup
+		- New SSH Key
+			- Generate
+			- Add to SSH agent
+		- Restore GPG Key
+- Applications
+	- Utils
+		- Wget
+		- Recordmydesktop
+		- Scrot
+		- HTop
+		- Aspell (spell checker)
+		- NCDU (disk usage)
+		- Jq
+		- File manager (Thunar?)
+	- Full Apps
+		- Firefox
+			- Install
+			- Set Default
+		- Spotify
+		- Keybase
+		- Signal
+		- Slack
+		- Whatsapp
+		- Jupyter Lab
+		- Discord
+		- WeeChat
