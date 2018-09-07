@@ -9,45 +9,33 @@ System configuration design.
 - [Configuration](#configuration)
 
 # Overview
-The system configuration tool completely sets up my linux environment.  
+The tool defines 3 primitives which are used to configure a system:
 
-*Modules* handle the configuration of an individual piece of the system.  
+- Modules
+- Actions
+- Configuration
 
-*Actions* change the state of the system. They are used in *modules* to 
-complete configuration. Some *actions* must modify the state of the system in 
-different ways depending on the operating system.  
-
-*Configuration* can be used to modify the details of how a *module* sets up 
-a system.
+Different parts of the system are configured by *modules*. Modules use 
+*actions* to change the state of the system. Modules also 
+accept *configuration*.
 
 # Operating Systems
-This tool is designed to work on linux exclusively.  
+[Arch Linux](http://archlinux.org/) is the only linux distribution supported 
+at this time.  
 
-Currently [Arch Linux](http://archlinux.org/) is the only supported linux 
-distribution.  
-
-However the tool is designed to handle different distributions in the future.  
-
-To support a new linux distribution some actions would have to be modified to 
-use distribution specific commands (ex: a different package manager `pacman` 
-vs `apt`).
+The tool has the concept of actions which allow support for other operating systems to be added.
 
 # Modules
-A module should provide the following functions:
+A module has 2 steps:
 
-- Check
-    - Determine if a module has already configured the part of the system it 
-        is responsible for
-- Run
-    - Run actions to configure system
-- Remove
-    - Remove the configuration the module provided
-    - Some modules can not complete this step
+- Install
+    - Configure relevant part of system using actions
+- Verify
+	- Ensure the expected changes were made by the module
 
 # Actions
-An action can accept arguments. Some actions will do different things based on 
-the linux distribution.
+Actions modify the state of the system. They abstract how the system's state is actually modified. Allowing modules to 
+use actions and let the implementation of the action run different commands depending on the operating system.
 
 # Configuration
-Configuration is can have default values and linux distribution 
-specific values.
+Configuration is used by modules to modify their behavior.
