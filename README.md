@@ -3,11 +3,15 @@ Tool for configuring a Linux system.
 
 # Table Of Contents
 - [Overview](#overview)
-- [Design](#design)
+- [Development](#development)
 
 # Overview
 The system configuration tool completely sets up my linux environment.  
 
 Run the system configure tool by executing the `syscfg` file.  
 
-See the [design document](design.md) and [module ideas document](module-ideas.md) for details on how the tool works.  
+# Development
+Review the [design](docs/design.md) and [module ideas](docs/module-ideas.md) documents for details on how the
+tool works.
+
+Review the [development](docs/development.md) document for development instructions.
