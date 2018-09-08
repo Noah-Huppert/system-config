@@ -9,15 +9,15 @@ System configuration design.
 - [Configuration](#configuration)
 
 # Overview
-The tool defines 3 primitives which are used to configure a system:
+The tool defines 4 primitives which are used to configure a system:
 
+- Modules Group
 - Modules
 - Actions
 - Configuration
 
-Different parts of the system are configured by *modules*. Modules use 
-*actions* to change the state of the system. Modules also 
-accept *configuration*.
+Different parts of the system are configured by *modules*. Similar modules are organized into *module groups*. Modules 
+use *actions* to change the state of the system. Modules also accept *configuration*.
 
 # Operating Systems
 [Arch Linux](http://archlinux.org/) is the only linux distribution supported 
