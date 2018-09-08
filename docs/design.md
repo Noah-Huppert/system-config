@@ -20,8 +20,7 @@ Different parts of the system are configured by *modules*. Similar modules are o
 use *actions* to change the state of the system. Modules also accept *configuration*.
 
 # Operating Systems
-[Arch Linux](http://archlinux.org/) is the only linux distribution supported 
-at this time.  
+[Arch Linux](http://archlinux.org/) is the only linux distribution supported at this time.  
 
 The tool has the concept of actions which allow support for other operating systems to be added.
 
