@@ -10,9 +10,11 @@ Brainstorming modules.
 	- Encryption
 		- Secure Erase
 		- DM Crypt Luks Container
-	- FStab
 - Linux Install
 	- Live Environment Setup
+		- Mount
+			- DM crypt container
+			- Boot partition
 		- Network
 		- Mirrors
 		- Locale
@@ -20,7 +22,11 @@ Brainstorming modules.
 			- Timezone
 			- NTP
 	- Base OS
+	- Fstab
 	- [Chroot]
+	- Connection manager
+		- Install Connman
+		- Connect to network
 	- Accounts
 		- Root password
 		- Personal account
@@ -28,42 +34,59 @@ Brainstorming modules.
 			- Password
 			- Sudoer
 	- Bootloader
+		- Initramfs
+		- Install refind
+		- Configure refind
 	- [Reboot]
 - System Setup
 	- Hostname
 	- Update firmware
-	- Connection manager
+	- Intel UCode
 - Shell
-	- Git
-	- Dotfiles
+	- [Trizen](https://github.com/trizen/trizen)
 	- Zsh
 	- TMux
-	- GPG
-	- NVim
-		- Deoplete
-	- [Mosh](https://mosh.org/)
+	- Dotfiles
+	- Tools
+		- Git
+		- GPG
+		- Tree
+		- NVim
+			- Deoplete
+			- Gocode
+		- [Mosh](https://mosh.org/)
+		- Rkt
+		- GCloud CLI
+		- DNSUtils
+		- HTTPie
+		- Drone CLI	
 - X
-	- X (Perhaps Wayland?)
-	- Xrandr (For multiple screens)
+	- Wayland
+	- Winston
+	- [Sway](https://github.com/swaywm/sway)
+	- Xrandr
 	- Alacrity
-	- Bspwm
-	- Sxhkd
-	- Compositor (Compton?)
 	- Fonts
 		- Hack
 		- Roboto
 		- Nerd fonts
+		- Noto
+		- Fira Mono
+		- Source Code Pro
 	- Adapta (GTK Theme)
 	- Dmenu
-	- Locker
+	- i3 lock
 	- Polybar
+	- Feh
 	- Some Dock
 - Drivers
 	- Yubikey
 	- Ltunify (Wireless mice)
 	- NTFS
+	- Pulse Audio
 - Dev Env
 	- Languages
+		- Java
 		- Go
 		- Godebug
 		- Python
@@ -76,18 +99,11 @@ Brainstorming modules.
 			- SDK
 		- Flutter
 		- LaTeX
-	- Tools
-		- GPG
-		- Rkt
-		- GCloud CLI
-		- DNSUtils
-		- HTTPie
-		- Drone CLI
 	- Setup
 		- New SSH Key
 			- Generate
 			- Add to SSH agent
-		- Restore GPG Key
+		- New GPG Key or restore GPG key
 - Applications
 	- Utils
 		- Wget
@@ -102,6 +118,7 @@ Brainstorming modules.
 		- Firefox
 			- Install
 			- Set Default
+		- Google Chrome
 		- Spotify
 		- Keybase
 		- Signal
