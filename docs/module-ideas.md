@@ -93,6 +93,7 @@ Brainstorming modules.
 			- 3.x.x
 			- Virtual env
 		- NodeJs
+		- Rust
 		- Android
 			- Studio
 			- NDK
